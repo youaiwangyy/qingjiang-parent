@@ -1,14 +1,16 @@
-package com.qingjiang.qingjiangparent.domain;
+package com.qingjiang.common.domain;
 
 
 import lombok.*;
 
+import java.io.Serializable;
+
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @ToString
-public class User {
+public class User implements Serializable {
 
     private Long id;
     private String name;
